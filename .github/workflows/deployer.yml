@@ -30,10 +30,6 @@ jobs:
           --source=src \
           --entry-point=hello_world \
           --trigger-http
-  permisions:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
       - name: 'Add invoker to all'
         run:  |
           gcloud functions add-invoker-policy-binding hello_world \
