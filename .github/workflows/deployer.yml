@@ -24,7 +24,6 @@ jobs:
       - name: 'Deploy to gen2 cloud function'
         run:  |
           gcloud functions deploy hello_world \
-          --gen1 \
           --region=us-east1 \
           --runtime=python312 \
           --source=src \
