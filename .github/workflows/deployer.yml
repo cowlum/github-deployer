@@ -33,5 +33,5 @@ jobs:
       - name: 'Add invoker to all'
         run:
           gcloud functions add-invoker-policy-binding hello_world \
-          --region=us-east1 \
-          --member=allUsers
+          --region="us-east1" \
+          --member="allUsers"
