@@ -30,4 +30,3 @@ jobs:
           --source=src \
           --entry-point=hello_world \
           --trigger-http
-          --allow-unauthenticated
