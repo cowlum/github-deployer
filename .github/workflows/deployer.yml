@@ -32,6 +32,6 @@ jobs:
           --trigger-http
       - name: 'Add invoker to all'
         run:
-          gcloud functions add-iam-policy-binding hell_oWorld \
+          gcloud functions add-iam-policy-binding hello_World \
             --member="allUsers" \
             --role="roles/cloudfunctions.invoker"
