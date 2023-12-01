@@ -31,3 +31,5 @@ jobs:
           --entry-point=hello_world \
           --trigger-http
           --no-allow-unauthenticated
+          --member="allUsers" \
+          --role="roles/cloudfunctions.invoker"
