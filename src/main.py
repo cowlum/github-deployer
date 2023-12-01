@@ -1,6 +1,4 @@
-import functions_framework
 
-@functions_framework.http
 def hello_world(request):
     """HTTP Cloud Function.
     Args:
