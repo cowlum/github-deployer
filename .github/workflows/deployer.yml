@@ -24,9 +24,14 @@ jobs:
       - name: 'Deploy to gen2 cloud function'
         run:  |
           gcloud functions deploy hello_world \
+          --gen2 \
           --region=us-east1 \
           --runtime=python312 \
           --source=src \
           --entry-point=hello_world \
           --trigger-http
           --allow-unauthenticated
+      - name: 'Add invoker to all'
+          gcloud functions add-invoker-policy-binding hello_world \
+          --region="us-east1" \
+          --member="allUsers"
