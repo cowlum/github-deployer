@@ -31,6 +31,7 @@ jobs:
           --entry-point=hello_world \
           --trigger-http
       - name: 'Add invoker to all'
+        run:
           gcloud functions add-invoker-policy-binding hello_world \
           --region="us-east1" \
           --member="allUsers"
