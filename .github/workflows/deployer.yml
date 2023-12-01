@@ -29,4 +29,5 @@ jobs:
           --runtime=python310 \
           --source=src \
           --entry-point=hello_world \
-          --trigger-topic=http
+          --trigger-http
+          --allow-unauthenticated
