@@ -30,5 +30,4 @@ jobs:
           --source=src \
           --entry-point=hello_world \
           --trigger-http
-          --member="allUsers" \
-          --role="roles/cloudfunctions.invoker"
+          --allow-unauthenticated
