@@ -13,4 +13,4 @@ def hello_world(request):
         Functions, see the `Writing HTTP functions` page.
         <https://cloud.google.com/functions/docs/writing/http#http_frameworks>
     """
-    return "Hello blWorld!"
+    return "Hello bWorld!"
